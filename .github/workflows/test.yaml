@@ -1,7 +1,6 @@
 name: New Deployments
-on:
-  check_suite:
-    types: [completed]
+on: status
+
 
 jobs:
   echo_completed:
