@@ -1,8 +1,5 @@
 name: New Deployments
 on:
-  push:
-    branches:
-      - main
   check_suite:
     types:
       - completed
@@ -10,8 +7,8 @@ on:
       - main
 
 jobs:
-  echo_hello:
+  echo_completed:
     runs-on: ubuntu-latest
     steps:
-      - name: Echo Hello
+      - name: Echo Completed
         run: echo "completed"
