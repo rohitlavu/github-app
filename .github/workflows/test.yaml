@@ -1,10 +1,7 @@
 name: New Deployments
 on:
   check_suite:
-    types:
-      - completed
-    branches:
-      - main
+    types: [completed]
 
 jobs:
   echo_completed:
